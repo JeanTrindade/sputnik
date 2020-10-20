@@ -8,7 +8,16 @@ function calcular(){
     let mes = document.getElementById("mes");
     let ano = document.getElementById("ano");
 
-    
-    saida.innerHTML = sv;
+ alert("ola estou aqui");
 
 }
+
+var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    // O código desejado é apenas isto:
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("conteudo").style.display = "inline";
+
+}, 3000);

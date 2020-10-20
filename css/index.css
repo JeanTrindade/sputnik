@@ -43,14 +43,16 @@ header{
 #carousel{
     width: 100%;
     min-height: 600px;
+    margin-bottom: 20px;
 }
 #Sv{
     border: solid .5px darkgray ;
 }
 #saida{
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
     background-color: #E0FFFF;
+    margin-top: 10px;
 }
 h2{
     text-align: center;

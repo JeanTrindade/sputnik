@@ -30,6 +30,13 @@ body{
     margin-top: -15px;
 
 }
+#logo2{
+    width: 27%;
+    float:right;
+    min-height: auto;
+    margin-top: -15px;
+
+}
 #ilog{
     text-align: center;
 }
