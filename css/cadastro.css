@@ -1,0 +1,26 @@
+body{
+    background-color: white;
+    width: 100%;
+    min-height: 500px;
+}
+img{
+    width :50%;
+    min-height: 650px;
+    float: right;
+    margin-top: 0;
+}
+#cadastro{
+    margin: 40px 0 0 100px;
+    float: left;
+    width: 55%;
+    border-radius: 0 20px 20px 0;
+    box-shadow: darkgray 2px 2px 3px;
+    position: absolute;
+    min-height: 600px;
+    background-image:linear-gradient(to right, gray , darkgray);
+}
+h1{
+    text-align: center;
+    color: #2F4F4F;
+    margin-top: 20px;
+}

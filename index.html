@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Reciclo</title>
+    
+</head>
+<body>
+
+
+    <header>
+      <div class="container">
+          <div id="menu">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#ExemploModalCentralizado">Simulador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carousel">Carousel </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Consulta rotas </a>
+            </li>
+          </ul>
+        </div>
+        <img id="logo2" src="img/reciclo.png" alt="reciclo">
+      </div>
+  </header>
+     
+    <div id="intro" class="container">
+
+       <div class="jumbotron">
+            <h1 class="display-4">Bem vindo ao Reciclo!</h1>
+            <p class="lead">Este é um programa que vai auxiliar a sua rotina de organização dos materiais descartaveis consumidos.
+              Trazendo informações importantes e com ferramentas que vão abrir sua mente em relação ao consumo sustentavel.
+            </p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet. Et veritatis autem sed inventore ipsa non nulla quasi qui voluptates doloremque id iste praesentium. Et impedit facilis aut expedita commodi in quam magni rem accusantium culpa sit quia iste ut debitis impedit. Id Quis magni vel possimus ratione et animi consequuntur sit quia nemo ut velit nihil?
+
+              Non maxime tempora est quisquam ea exercitationem consequatur ea optio quia nam rerum reiciendis non incidunt expedita. Et quia tenetur ut voluptatibus odit sit deleniti culpa ut voluptatem accusamus et perferendis eius et quod voluptas? Et exercitationem Quis non perspiciatis reiciendis qui dolore dolor vel impedit consequuntur quo corrupti et doloribus rerum.
+              
+              Ea atque omnis et molestiae odio a unde galisum qui voluptas numquam est expedita corrupti qui quasi unde eos mollitia perferendis! Qui voluptas modi hic voluptatem alias non itaque quisquam. Et dolorem nihil non provident eligendi et tempore quia et aliquid corporis. Id unde voluptas ut nihil consequatur est pariatur consequatur et quaerat odit eum eveniet veritatis et maxime laboriosam?.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+           
+         
+       </div>
+
+    </div>
+
+
+    <h2>Carousel</h2>
+    <div class="container" id="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/rc.png" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/rc.png" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/rc.png" alt="Terceiro Slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+     </div>
+
+    </div>
+
+    <div id="modal">
+          
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Simulador de consumo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              <p>O simulador de consumo estima uma quantidade de material consumido por você ao longo de um periodo,
+                materializando algo que parece pouco no dia dia. <br>
+                Escolha o material a qual deseja calcular:
+              </p><br>
+                <select id="material" name="material" class="btn btn-primary">
+                  <option id = " lata"  value="lata">Latas</option>
+                  <option id = " garrafa" value="garrafa">Garrafa Pet</option>
+                  <option id = " vidro" value="vidro">Vidro</option>
+                  <option id = " papel" value="Papel">Papel</option>
+                </select>
+                <p>Agora o periodo a ser considerado:</p>
+                <select id="tempo" name="tempo" class="btn btn-secondary">
+                  <option id = " mes " value="mes">Mensal</option>
+                  <option  id = " ano " value="ano">Anual</option>
+                </select>
+                <p> Entre com a quantidade aproximada de material consumido semanalmente: </p><br>
+                <input id="Sv" type="number" class="btn">
+
+                <div id="saida">
+
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+ 
+  <footer>
+
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

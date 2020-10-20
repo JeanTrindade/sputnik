@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Login</title>
+  
+</head>
+<body>
+  <div id="loading" style="display: block">
+    <img src="img/reciclo.png" style="width:400px;height:250px;" />
+    <h2>O lixo e seu, a nutureza e de todos <br>FAÇA RECICLAGEM</h2>
+</div>
+<div id="conteudo" style="display: none">
+    
+    
+      <div id="lg">
+         <div id="ilog">
+        <img id="logo" src="img/reciclo.png" alt="..">
+         </div>
+        <form action="">
+          <p>Email</p>
+          <input type="email" placeholder="email@email.com" class="btn"><br>
+          <p></p>
+          <p>Senha</p>
+          <input type="password" placeholder="Senha" class="btn"><br>
+          <p></p>
+          <input id= "bts" type="submit" value="Login" class="btn btn-primary">
+          <p>Não é cadastrado? <a href="cadastro.html">Cadastrar-se</a>.</p>
+          <a href="index.html">home</a>
+          
+        </form>
+      </div>
+   
+    
+
+  </div>
+
+  <script>
+    var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    // O código desejado é apenas isto:
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("conteudo").style.display = "inline";
+
+}, 3000);
+  </script>
+ 
+</body>
+</html>
