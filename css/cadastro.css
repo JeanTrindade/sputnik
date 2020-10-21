@@ -5,7 +5,7 @@ body{
 }
 img{
     width :50%;
-    min-height: 650px;
+    min-height:auto;
     float: right;
     margin-top: 0;
 }

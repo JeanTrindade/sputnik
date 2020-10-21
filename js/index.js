@@ -1,14 +1,19 @@
 function calcular(){
-    let lata = document.getElementById("lata");
-    let vidro = document.getElementById("vidro");
-    let papel = document.getElementById("papel");
-    let garrafa = document.getElementById("garrafa");
-    let sv = Number(document.getElementById("Sv"));
+    let material = document.getElementById("material").value;
+    let tempo = document.getElementById("tempo").value;
+    let sv = document.getElementById("qtd").value;
     let saida = document.getElementById("saida");
-    let mes = document.getElementById("mes");
-    let ano = document.getElementById("ano");
+  
+    let result = 0;
+    
+    if(material.value == "papel" && tempo.value == "mes"){
+        result = (sv * 1) * 4.2;
+    }else if (material.value == "papel" && tempo.value == "ano"){
+        result = (sv * 2) * 52;
+    }
+   
 
- alert("ola estou aqui");
+    saida.innerHTML = `De acordo com os dados fornecidos o consumo de ${material} por ${tempo} consumido foi de ${result} kg.`;
 
 }
 
