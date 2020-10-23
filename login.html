@@ -9,30 +9,27 @@
   
 </head>
 <body>
-  <div class="container" id="loading" style="display: block">
-    <img src="img/reciclo.png" style="width:27%;height:auto;" />
-    <h2>O lixo e seu, a nutureza e de todos <br>FAÇA RECICLAGEM</h2>
+  <div class="container" id="loading" style="display: block; height:400px;">
+    <img src="img/reciclo.png" style="width:40%;height:auto;" />
+    <h3>O lixo e seu, a nutureza e de todos <br>FAÇA RECICLAGEM</h3>
 </div>
 <div id="conteudo" style="display: none">
     
     <div class="container">
-      <div id="lg">
-         <div id="ilog">
-        <img id="logo" src="img/reciclo.png" alt="..">
-         </div>
-        <form action="">
-          <p>Email</p>
-          <input type="email" placeholder="email@email.com" class="btn"><br>
-          <p></p>
-          <p>Senha</p>
-          <input type="password" placeholder="Senha" class="btn"><br>
-          <p></p>
-          <input id= "bts" type="submit" value="Login" class="btn btn-primary">
-          <p>Não é cadastrado? <a href="cadastro.html">Cadastrar-se</a>.</p>
-          <a href="index.html">home</a>
-          
-        </form>
-      </div>
+
+      <form id="lg">
+        <img id="logo2" src="img/reciclo.png" >
+        <div class="form-group">
+          <label for="exampleInputEmail1">Endereço de email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email"style="width: 70%; height: auto;">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Senha</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"style="width: 70%; height: auto;">
+        </div>
+       
+        <button type="submit" class="btn btn-primary" style="width: 40%; height: auto;">Enviar</button>
+      </form>
    
     
 

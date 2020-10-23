@@ -3,11 +3,10 @@ body{
     background-image: linear-gradient(to right blue, white black);
 }
 #logo2{
-    width: 10%;
+    width: 20%;
     min-height: auto;
-    margin-top: 5px;
-    float: right;
-
+    margin-top: 0;
+    float: left;
 }
 #logo2:hover{
   width: 11%;
@@ -19,26 +18,17 @@ body{
 header{
     background-image: linear-gradient(to right,black, darkblue, black);
     width: 100%;
-    min-height: 100px;
+    min-height: 80px;
     padding: 10px;
 }
 
-.nav-item a{
-    
-    color: white;
-
-}
-.nav-item a:hover{
-    font-size: 24px;
-    color:	#B22222;
-   
-   
-
-}
 #menu{
    
     float: left;
     margin-top: 30px;
+}
+.carousel-item{
+    border-radius: 10px;
 }
 #carousel{
     width: 100%;
@@ -66,7 +56,16 @@ h2:hover{
 footer{
     background-image: linear-gradient(to right,black, darkblue, black);
     width: 100%;
-    min-height: 100px;
+    min-height: 80px;
     padding: 10px;
 
+}
+#bt{
+   
+    border-radius: 15px;
+}
+
+.navbar navbar-expand-lg navbar-dark bg-dark{
+    background-color: none;
+    float: left;
 }

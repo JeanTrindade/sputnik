@@ -11,11 +11,11 @@ body{
 }
 #lg{
     text-align: left;
-    margin: 9% 27%  auto;
+    margin: 0 0 0 10px;
     margin-bottom: 0;
-    width: 45%;
-    min-height: auto;
-    padding: 50px;  
+    width: 90%;
+    min-height: 90vh;
+    padding: 10px;
     border-radius: 20px ;
     box-shadow:white 3px 3px  4px ;
    
